@@ -15,7 +15,7 @@ pipeline{
       steps  {
             sh '''
             chmod +x /front/react.sh
-            ./frontend/react.sh
+            ./front/react.sh
             '''}
         }
         stage('Setup Gunicorn Setup'){

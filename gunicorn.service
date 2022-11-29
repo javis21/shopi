@@ -6,8 +6,8 @@ After=network.target
 [Service]
 User=root
 Group=www-data
-WorkingDirectory=/var/lib/jenkins/workspace/django
-ExecStart=/var/lib/jenkins/workspace/django/env/bin/gunicorn --workers 3 --log-level debug --error-logfile /var/lib/jenkins/workspace/django/error.log --bind unix:/run/gunicorn.sock app.wsgi:application
+WorkingDirectory=/var/lib/jenkins/workspace/shopi
+ExecStart=/var/lib/jenkins/workspace/shopi/env/bin/gunicorn --workers 3 --log-level debug --error-logfile /var/lib/jenkins/workspace/shopi/error.log --bind unix:/run/gunicorn.sock app.wsgi:application
 
 [Install]
 WantedBy=multi-user.target

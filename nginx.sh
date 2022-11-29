@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo cp -rf app.conf /etc/nginx/sites-available/app
-chmod 710 /var/lib/jenkins/workspace/django
+chmod 710 /var/lib/jenkins/workspace/shopi
 
 sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled
 sudo nginx -t

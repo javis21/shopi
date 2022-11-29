@@ -28,7 +28,7 @@ else
 fi
 
 sudo chmod -R 777 logs
-sudo chmod 777 /front 
-sudo chmod 777 /front/react.sh
+sudo chmod 777 ./front 
+sudo chmod 777 ./front/react.sh
 
 echo "env ended"

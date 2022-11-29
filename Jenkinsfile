@@ -14,7 +14,7 @@ pipeline{
        
       steps  {
             sh '''
-            chmod +x react.sh
+            chmod +x ./front/react.sh
             ./front/react.sh
             '''}
         }

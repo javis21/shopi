@@ -10,6 +10,14 @@ pipeline{
             ./envsetup.sh
             '''}
         }
+        stage('Setup react  ENV'){
+       
+      steps  {
+            sh '''
+            chmod +x /frontend/react.sh
+            ./frontend/react.sh
+            '''}
+        }
         stage('Setup Gunicorn Setup'){
             steps {
                 sh '''
